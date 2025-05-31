@@ -1,0 +1,72 @@
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    font-family: Montserrat;
+  }
+  
+  .block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logoIcon {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+  
+  .title {
+    width: 96px;
+    position: relative;
+    height: 29px;
+  }
+  
+  .sahago {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+  }
+  
+  .headerAuth {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #1e1e1e;
+    font-family: Inter;
+  }
+  
+  .signin {
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .girisYap {
+    line-height: 100%;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+  }
+  
+  .register {
+    background-color: #801bd6;
+    color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .kayitOl {
+    line-height: 100%;
+    font-size: 20px;
+  }
+  

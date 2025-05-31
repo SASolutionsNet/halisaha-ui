@@ -1,0 +1,25 @@
+.terms {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #080a0b;
+  font-family: 'Red Hat Display';
+}
+
+.checkParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.text {
+  line-height: 1.2;
+}

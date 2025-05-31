@@ -1,0 +1,42 @@
+.footballPitchWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 72px;
+  color: #fff;
+}
+
+.footballPitch {
+  width: 100%;
+  height: 406px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 24px;
+  background-image: url('footbal-pitch.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-sizing: border-box;
+}
+
+.textContentTitle {
+  width: 800px;
+  border-radius: 25px;
+  background-color: rgba(8, 10, 11, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  box-sizing: border-box;
+}
+
+.title {
+  display: inline-block;
+  flex-shrink: 0;
+  letter-spacing: -0.03em;
+  line-height: 120%;
+}

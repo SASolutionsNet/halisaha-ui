@@ -1,0 +1,7 @@
+.photo {
+    width: 63px;
+    height: 63px;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+  

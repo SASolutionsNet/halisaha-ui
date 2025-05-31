@@ -1,0 +1,32 @@
+.cardGrid {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px;
+}
+
+.headingGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+}
+
+.subheading {
+  font-size: 20px;
+  color: #757575;
+  line-height: 120%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}

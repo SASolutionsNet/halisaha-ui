@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom : 20px;
+  font-size: 16px;
+}
+
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 240px;
+}
+
+.logoIcon {
+  width: 70px;
+  height: 70px;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.linkSection {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.groupTitle {
+  font-weight: 600;
+  line-height: 140%;
+  padding-bottom: 16px;
+}
+
+.link {
+  line-height: 140%;
+  color: #1e1e1e;
+}
