@@ -1,0 +1,39 @@
+.card {
+    width: 301.3px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    min-width: 240px;
+  }
+  
+  .infoIcon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  
+  .body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .heading {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+  }
+  
+  .bodyText {
+    font-size: 16px;
+    line-height: 140%;
+    color: #757575;
+  }
+  

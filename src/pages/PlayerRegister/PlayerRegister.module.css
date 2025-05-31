@@ -1,0 +1,75 @@
+.playerRegister {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    font-family: Inter;
+    font-size: 16px;
+    color: #801bd6;
+    overflow: hidden;
+  }
+  
+  .containerWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .container {
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px 5px;
+    background-color: transparent;
+  }
+  
+  .line {
+    width: 102px;
+    height: 4px;
+    background-color: #801bd6;
+    border-radius: 2px;
+  }
+  
+  .sidePhotoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Side Photo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 617px;
+    height: 900px;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .textContentTitle {
+    flex: 1;
+    border-radius: 25px;
+    background-color: rgba(8, 10, 11, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+  }
+  
+  .title3 {
+    width: 765px;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+    display: inline-block;
+  }
+  

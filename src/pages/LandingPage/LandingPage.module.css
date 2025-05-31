@@ -1,0 +1,14 @@
+.landingPage {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;  /* Yatay taşmayı önler */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 24px;
+    color: #1e1e1e;
+    font-family: Inter, sans-serif;
+  }
+  

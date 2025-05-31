@@ -1,0 +1,64 @@
+.lines {
+  width: 284px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #080a0b;
+}
+
+.lineIcon {
+  width: 102px;
+  height: 4px;
+}
+
+.text {
+  position: relative;
+  line-height: 100%;
+}
+
+.signup {
+  height: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 14px;
+  color: #080a0b;
+  font-family: "Red Hat Display";
+}
+
+.textContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.textFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #801bd6;
+}
+
+.info {
+  position: relative;
+}
+
+.register {
+  position: relative;
+}
+
+.line {
+  width: 102px;
+  height: 4px;
+  background-color: #801bd6; /* eski lineIcon rengine uygun */
+  border-radius: 2px;
+}
+
