@@ -1,0 +1,82 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 20px;
+  color: #1e1e1e;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 12px;
+}
+
+.label {
+  font-size: 14px;
+  color: #1e1e1e;
+  line-height: 140%;
+}
+
+.input {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #fff;
+  height: 29px;
+  padding: 6px 10px;
+  min-width: 240px;
+  box-sizing: border-box;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+}
+
+.multiField {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  font-family: 'Red Hat Display';
+  color: #080a0b;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #080a0b;
+  font-family: 'Red Hat Display';
+  padding: 0px 12px;
+  margin-top: 12px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+}

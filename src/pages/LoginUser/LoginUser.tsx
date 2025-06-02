@@ -26,7 +26,7 @@ const LoginUser: FC = () => {
         <div className={styles.container}>
         <div className={styles.line}></div>
         <HeaderSection />
-          <RoleSelector selectedRole="player"/>
+          <RoleSelector selectedRole="player-login"/>
           <LoginForm onLoginClick={onLoginClick} />
           <FooterActions onRegisterClick={onRegisterClick} />
         </div>

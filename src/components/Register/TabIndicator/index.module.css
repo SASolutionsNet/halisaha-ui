@@ -1,0 +1,16 @@
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .tab {
+    width: 102px;
+    height: 4px;
+    background-color: #801bd6;
+    border-radius: 2px;
+  }
+  

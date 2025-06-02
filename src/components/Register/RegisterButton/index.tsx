@@ -7,9 +7,12 @@ interface RegisterButtonProps {
 
 const RegisterButton: FC<RegisterButtonProps> = ({ onClick }) => {
   return (
-    <div className={styles.register} onClick={onClick}>
+    <div className={styles.buttonGroup}>
+      <button className={styles.register} onClick={onClick}>
       <div className={styles.text}>Kayıt Ol</div>
-    </div>
+    </button>
+</div>
+    
   );
 };
 
