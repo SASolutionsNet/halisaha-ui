@@ -1,39 +1,12 @@
 import { type FC } from "react";
-import { useFormik } from "formik";
-import * as Yup from "yup";
+import { useFormikContext } from "formik";
 import styles from "./index.module.css";
 
 const RegisterForm: FC = () => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      surname: "",
-      username: "",
-      email: "",
-      phone: "",
-      city: "",
-      password: "",
-      confirmPassword: ""
-    },
-    validationSchema: Yup.object({
-      name: Yup.string().required("Ad gerekli"),
-      surname: Yup.string().required("Soyad gerekli"),
-      username: Yup.string().required("Kullanıcı adı gerekli"),
-      email: Yup.string().email("Geçersiz email").required("Email gerekli"),
-      phone: Yup.string().required("Telefon gerekli"),
-      city: Yup.string().required("Şehir gerekli"),
-      password: Yup.string().required("Şifre gerekli"),
-      confirmPassword: Yup.string()
-        .oneOf([Yup.ref("password")], "Şifreler eşleşmiyor")
-        .required("Şifre doğrulama gerekli")
-    }),
-    onSubmit: values => {
-      console.log("Kayıt bilgileri:", values);
-    }
-  });
+  const formik = useFormikContext<any>();
 
   return (
-    <form className={styles.form} onSubmit={formik.handleSubmit}>
+    <div className={styles.form}>
       <div className={styles.left}>
         <div className={styles.field}>
           <label className={styles.label}>Ad</label>
@@ -43,7 +16,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.name && formik.errors.name && (
+          {formik.touched.name && typeof formik.errors.name === "string" && (
             <div className={styles.error}>{formik.errors.name}</div>
           )}
         </div>
@@ -56,7 +29,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.username && formik.errors.username && (
+          {formik.touched.username && typeof formik.errors.username === "string" && (
             <div className={styles.error}>{formik.errors.username}</div>
           )}
         </div>
@@ -69,7 +42,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.phone && formik.errors.phone && (
+          {formik.touched.phone && typeof formik.errors.phone === "string" && (
             <div className={styles.error}>{formik.errors.phone}</div>
           )}
         </div>
@@ -83,7 +56,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.password && formik.errors.password && (
+          {formik.touched.password && typeof formik.errors.password === "string" && (
             <div className={styles.error}>{formik.errors.password}</div>
           )}
         </div>
@@ -98,7 +71,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.surname && formik.errors.surname && (
+          {formik.touched.surname && typeof formik.errors.surname === "string" && (
             <div className={styles.error}>{formik.errors.surname}</div>
           )}
         </div>
@@ -111,7 +84,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.email && formik.errors.email && (
+          {formik.touched.email && typeof formik.errors.email === "string" && (
             <div className={styles.error}>{formik.errors.email}</div>
           )}
         </div>
@@ -124,7 +97,7 @@ const RegisterForm: FC = () => {
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.city && formik.errors.city && (
+          {formik.touched.city && typeof formik.errors.city === "string" && (
             <div className={styles.error}>{formik.errors.city}</div>
           )}
         </div>
@@ -134,16 +107,16 @@ const RegisterForm: FC = () => {
           <input
             type="password"
             name="confirmPassword"
-            value={formik.values.confirmPassword}
+            value={formik.values.password}
             onChange={formik.handleChange}
             className={styles.input}
           />
-          {formik.touched.confirmPassword && formik.errors.confirmPassword && (
-            <div className={styles.error}>{formik.errors.confirmPassword}</div>
+          {formik.touched.password && typeof formik.errors.password === "string" && (
+            <div className={styles.error}>{formik.errors.password}</div>
           )}
         </div>
       </div>
-    </form>
+    </div>
   );
 };
 
